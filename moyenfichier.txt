@@ -1,0 +1,1 @@
+Ceci Est un fichier de taille moyenne. Il a plus de 16 char, mais moins de 1600.

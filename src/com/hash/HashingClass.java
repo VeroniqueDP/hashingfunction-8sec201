@@ -69,15 +69,13 @@ public class HashingClass {
             }
         }
 
-        //Fait les additions des résultats de XOR TODO
+        //Fait les additions des résultats de XOR
         for (int i = 0 ; i <= MinimumArrayRequired; i++){
-            for( int j = 1; j < LineNumber; j++) { // initialise a 1 puisque la ligne 0 serviral toujours de référence et sera utilisé dans tous les calculs
                 for(int k = 0; k < ColumnNumber; k++){
-                    TableauxDeBytes[0][0][k] = (byte) (TableauxDeBytes[0][0][k]+TableauxDeBytes[i][j][k]);
+                    TableauxDeBytes[0][0][k] = (byte) (TableauxDeBytes[0][0][k]+TableauxDeBytes[i][0][k]);
                 }
-            }
         }
-        // Isolation du hash TODO
+        // Isolation du hash
         byte[] hash = new byte[ColumnNumber];
 
         for(int k = 0; k < ColumnNumber; k++) {
@@ -102,6 +100,3 @@ public class HashingClass {
         System.out.print(Arrays.toString(hash));
     }
 }
-
-
-//https://www.geeksforgeeks.org/java-program-to-convert-file-to-a-byte-array/

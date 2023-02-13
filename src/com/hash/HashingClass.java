@@ -70,7 +70,7 @@ public class HashingClass {
         }
 
         //Fait les additions des résultats de XOR
-        for (int i = 0 ; i <= MinimumArrayRequired; i++){
+        for (int i = 1 ; i <= MinimumArrayRequired; i++){
                 for(int k = 0; k < ColumnNumber; k++){
                     TableauxDeBytes[0][0][k] = (byte) (TableauxDeBytes[0][0][k]+TableauxDeBytes[i][0][k]);
                 }

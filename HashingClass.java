@@ -1,3 +1,17 @@
+ /**
+ * Nom				: Duchesne
+ * Prenom			: Simon
+ * code permanent	: DUCS
+ *
+ * Nom				: Du Paul
+ * Prenom			: Veronique
+ * code permanent	: DUPV05518306
+ * 
+ * Cours			: Cybersécurité défensive : vulnérabilité et incidents
+ * Session			: hiver 2023
+ * Travail pratique : 1
+ */
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
